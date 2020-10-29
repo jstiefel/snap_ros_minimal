@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<launch>
+    <node name="influxdb_test" pkg="influxdb_test" type="influxdb_ros_node.py" output="screen" respawn="true" />
+</launch>
