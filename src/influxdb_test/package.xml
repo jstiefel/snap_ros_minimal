@@ -13,4 +13,5 @@
     <buildtool_depend>catkin_simple</buildtool_depend>
     
     <depend>python3-influxdb-client-pip</depend>
+    <depend>rospy</depend>
 </package>

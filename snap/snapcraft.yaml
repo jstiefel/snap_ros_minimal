@@ -29,6 +29,9 @@ parts:
     build-packages:
       - python3-pip
       - build-essential
+    stage-packages:
+      - ros-noetic-roslaunch
+      - python3-rospkg
 
   workspace:
     plugin: catkin-tools
