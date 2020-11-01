@@ -19,6 +19,8 @@ parts:
       - influxdb-client
     stage:
       - lib64/*
+    build-environment:
+      - PYTHONPATH: $SNAPCRAFT_PART_INSTALL/usr/lib/python3/dist-packages:$PYTHONPATH
 
   test-dump:
     plugin: dump 
@@ -42,6 +44,8 @@ parts:
 apps:
   test-pip-comm:
     command: src/influxdb.py
+    environment:
+      PYTHONPATH: $SNAP/usr/lib/python3/dist-packages
 
   catkin-ros-run:
     command: opt/ros/noetic/bin/roslaunch influxdb_test test.launch
